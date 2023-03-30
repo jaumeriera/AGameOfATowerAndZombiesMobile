@@ -17,16 +17,16 @@ public class HealthManager : MonoBehaviour
 
     public void SetUp(float health, string key=null, bool firstIni=true)
     {
-        float mh = health;
         if (key != null)
         {
             if (firstIni)
             {
                 PlayerPrefs.SetFloat("start" + key, health);
+                maxHealth = health;
             }
             else
             {
-                mh = PlayerPrefs.GetFloat("start" + key);
+                maxHealth = PlayerPrefs.GetFloat("start" + key);
             }
             if (PlayerPrefs.GetInt(mustHealPlayerKey) == 1)
             {
@@ -36,11 +36,16 @@ public class HealthManager : MonoBehaviour
             {
                 healthKey = key;
                 PlayerPrefs.SetFloat(key, health);
-                print(health);
+                currentHealth = health;
             }
         }
-        maxHealth = mh;
-        currentHealth = health;
+        else {
+            maxHealth = health;
+            currentHealth = health;
+        }
+        print("current: " + currentHealth);
+        print("max" + maxHealth);
+        print(currentHealth/maxHealth);
         lifeBar.transform.localScale = new Vector3(currentHealth / maxHealth, 1, 1);
     }
 
@@ -61,6 +66,7 @@ public class HealthManager : MonoBehaviour
     public void Heal()
     {
         currentHealth = maxHealth;
+        print("Heal " + currentHealth);
         if(healthKey != null)
         {
             PlayerPrefs.SetFloat(healthKey, maxHealth);
