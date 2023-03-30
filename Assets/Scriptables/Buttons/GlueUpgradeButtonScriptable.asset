@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ade8378141504b49baf788ede307712, type: 3}
+  m_Name: GlueUpgradeButtonScriptable
+  m_EditorClassIdentifier: 
+  startCost: 40
+  startLevel: 0
+  startBonus: 0.7
+  costIncrement: 1.3
+  bonusIncrement: 1.05
+  maxAtTime: 4
+  spawnEvery: 15
+  startItems: 0
