@@ -36,11 +36,12 @@ public class HealthManager : MonoBehaviour
             {
                 healthKey = key;
                 PlayerPrefs.SetFloat(key, health);
+                print(health);
             }
         }
         maxHealth = mh;
         currentHealth = health;
-        lifeBar.transform.localScale = new Vector3(1, 1, 1);
+        lifeBar.transform.localScale = new Vector3(currentHealth / maxHealth, 1, 1);
     }
 
     public void TakeDamage(float damage)
@@ -51,6 +52,9 @@ public class HealthManager : MonoBehaviour
         if (currentHealth == 0 && NoHealth != null)
         {
             NoHealth.Invoke();
+        }
+        if (healthKey != null) {
+            PlayerPrefs.SetFloat(healthKey, currentHealth);
         }
     }
 
