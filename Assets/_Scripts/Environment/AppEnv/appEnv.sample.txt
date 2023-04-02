@@ -1,0 +1,6 @@
+{
+  "appID" : "ca-app-pub-4192156479895676~7775840598",
+  "intertitialAddID" : "ca-app-pub-3940256099942544/1033173712",
+  "rewartAddID" : "ca-app-pub-3940256099942544/5224354917",
+  "bannerAddID" : "ca-app-pub-3940256099942544/6300978111",
+}

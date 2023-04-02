@@ -10,6 +10,9 @@ TagManager:
   - fire
   - glue
   - BackgroundMusic
+  - Environment
+  - InterstitialAdd
+  - Ads
   layers:
   - Default
   - TransparentFX

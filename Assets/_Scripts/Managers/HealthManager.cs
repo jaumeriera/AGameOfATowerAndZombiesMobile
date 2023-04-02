@@ -43,9 +43,6 @@ public class HealthManager : MonoBehaviour
             maxHealth = health;
             currentHealth = health;
         }
-        print("current: " + currentHealth);
-        print("max" + maxHealth);
-        print(currentHealth/maxHealth);
         lifeBar.transform.localScale = new Vector3(currentHealth / maxHealth, 1, 1);
     }
 
