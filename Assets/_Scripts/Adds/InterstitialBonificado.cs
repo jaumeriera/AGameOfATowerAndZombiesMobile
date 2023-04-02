@@ -14,11 +14,12 @@ public class InterstitialBonificado : MonoBehaviour
     }
 
     private void Start() {
+        //RegisterReloadHandler(rewardedInterstitialAd);
+        
+    }
+
+    private void OnEnable() {
         LoadRewardedInterstitialAd();
-        RegisterReloadHandler(rewardedInterstitialAd);
-        rewardedInterstitialAd.OnAdFullScreenContentClosed += () => {
-            UIManager.NewHorde();
-        };
     }
 
     /// <summary>
@@ -36,6 +37,8 @@ public class InterstitialBonificado : MonoBehaviour
         // create our request used to load the ad.
         var adRequest = new AdRequest.Builder().Build();
 
+        Debug.Log(env.appEnvironment.rewartAddID);
+
         // send the request to load the ad.
         RewardedInterstitialAd.Load(env.appEnvironment.rewartAddID, adRequest,
             (RewardedInterstitialAd ad, LoadAdError error) => {
@@ -50,6 +53,9 @@ public class InterstitialBonificado : MonoBehaviour
                           + ad.GetResponseInfo());
 
                 rewardedInterstitialAd = ad;
+                rewardedInterstitialAd.OnAdFullScreenContentClosed += () => {
+                    UIManager.NewHorde();
+                };
             });
     }
 

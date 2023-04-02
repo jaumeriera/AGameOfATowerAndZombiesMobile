@@ -13,7 +13,6 @@ public class IntertitalAdd : MonoBehaviour
 
     private void Start() {
         LoadInterstitialAd();
-        RegisterReloadHandler(interstitialAd);
     }
 
     public void LoadInterstitialAd() {
@@ -39,6 +38,8 @@ public class IntertitalAdd : MonoBehaviour
                         + ad.GetResponseInfo());
 
               interstitialAd = ad;
+
+              RegisterReloadHandler(interstitialAd);
           });
 
     }

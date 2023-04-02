@@ -25,6 +25,10 @@ public class BannerAd : MonoBehaviour
         LoadAd();
     }
 
+    private void OnDestroy() {
+        DestroyAd();
+    }
+
     public void CreateBannerView() {
 
         // If we already have a banner, destroy the old one.

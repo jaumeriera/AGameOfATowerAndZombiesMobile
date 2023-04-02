@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 9083879076994598281
     second: HealButtonTransparent_0
+  - first:
+      213: -2837910337434095335
+    second: HealButtonTransparent_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -138,7 +141,7 @@ TextureImporter:
         width: 145
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,6 +149,27 @@ TextureImporter:
       bones: []
       spriteID: 985cdde54eb601e70800000000000000
       internalID: 9083879076994598281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealButtonTransparent_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 482
+        width: 145
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911f4d08597bd98d0800000000000000
+      internalID: -2837910337434095335
       vertices: []
       indices: 
       edges: []
