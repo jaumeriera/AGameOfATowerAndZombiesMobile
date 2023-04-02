@@ -1080,7 +1080,6 @@ GameObject:
   - component: {fileID: 1973270764}
   - component: {fileID: 1973270763}
   - component: {fileID: 1973270762}
-  - component: {fileID: 1973270761}
   - component: {fileID: 1973270760}
   - component: {fileID: 1973270766}
   m_Layer: 5
@@ -1118,19 +1117,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1973270758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1cc6bc3f6bba047a65ac5e978d21c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1973270761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973270758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1948acd327bcc4994a9c49fff5d174, type: 3}
+  m_Script: {fileID: 11500000, guid: da1911ad99b35444aa81caae449267dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1973270762
@@ -1202,21 +1189,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1973270761}
-        m_TargetAssemblyTypeName: HealButton, Assembly-CSharp
-        m_MethodName: HealPlayer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1973270760}
-        m_TargetAssemblyTypeName: GoToPlay, Assembly-CSharp
-        m_MethodName: ContinuePlaying
+        m_TargetAssemblyTypeName: InterstitialBonificado, Assembly-CSharp
+        m_MethodName: ShowRewardedInterstitialAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
